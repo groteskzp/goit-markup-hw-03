@@ -1,5 +1,14 @@
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
 body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -7,6 +16,70 @@ body{
     letter-spacing: 0.02em;
     color: #434455;
     background-color: #ffffff;
+    margin: 0;
+}
+main{
+    flex-grow: 1;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+    padding: 24px 156px 24px 156px;    
+}
+.header ul{
+    padding: 0;
+}
+.header-nav{
+    margin-left: 76px;
+    flex-grow: 1;
+}
+.header-nav ul{
+    display: flex;
+    gap: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.header-address{
+    flex-wrap: nowrap;
+    flex-grow: 0;
+    margin-left: 40px;
+}
+.header-address ul{
+    display: flex;
+    min-width: 344px;
+    gap: 40px;
+    flex-grow: 0;
+    color: #434455;
+    font-style: normal;
+}
+.values ul{
+    display: flex;
+    gap: 24px;
+    padding: 120px 156px;
+    justify-content: center;
+}
+/* .values p{
+    text-align: left;
+    flex-shrink: 0;
+    flex-basis: 264px;
+    height: 72px;
+} */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .logo{
     font-family: "Raleway", sans-serif;
@@ -38,25 +111,27 @@ a:active{
 footer a {
     color: #F4F4FD;
 }
-.nav{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-address {
-    color: #434455;
-    font-style: normal;
-}
+
 .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #2e2f42;
     color: #F4F4FD;
+    padding-top: 188px;
+    gap: 48px;
+    padding-bottom: 188px;
+}
+.hero-title {
+    max-width: 496px;
 }
 .hero-button {
     background-color: #4D5AE5;
     color: #F4F4FD;
     border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
+
     cursor: pointer;
     font-weight: 500;
     font-size: 16px;
@@ -69,14 +144,32 @@ address {
     background-color: #404BBF;
 }
 .team {
+    
     background-color: #f4f4fd;
+    padding: 120px 156px;
+}
+.team ul {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    padding-left: 0;
 }
 .team li {
     background-color: #ffffff;
+    border-radius: 8px;
+
+}
+.team-card-text {
+    padding: 32px 16px;
+}
+.team h2 {
+    margin-bottom: 72px;
 }
 .team p,
 .team h2 {
     text-align: center;
+    
+   
 }
 .team h3 {
     text-align: center;

@@ -22,29 +22,31 @@
   </head>
 
   <body>
-    <header>
-      <a class="logo" href="./index.html"><span>Web</span>studio</a>
-      <nav class="nav">
-        <ul>
-          <li><a href="#team">Studio</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#">Contacts</a></li>
-        </ul>
-      </nav>
-      <address class="contacts">
-        <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-        </ul>
-      </address>
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="./index.html"><span>Web</span>studio</a>
+        <nav class="header-nav">
+          <ul>
+            <li><a href="#team">Studio</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="header-address">
+          <ul>
+            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+          </ul>
+        </address>
+      </div>
     </header>
     <main>
       <section id="hero" class="hero">
-        <h1>Effective Solutions for Your Business</h1>
+        <h1 class="hero-title">Effective Solutions for Your Business</h1>
         <button class="hero-button" type="button">Order Service</button>
       </section>
       <section id="values" class="values">
-        <h2>Our Features</h2>
+        <h2 class="visually-hidden">Our Features</h2>
         <ul>
           <li>
             <h3>Strategy</h3>
@@ -86,8 +88,10 @@
               height="260"
               alt="Product Designer Photo"
             />
+            <div class="team-card-text">
             <h3>Mark Guerrero</h3>
             <p>Product Designer</p>
+            </div>
           </li>
           <li>
             <img
@@ -96,8 +100,10 @@
               height="260"
               alt="Frontend Developer Photo"
             />
+            <div class="team-card-text">
             <h3>Tom Ford</h3>
             <p>Frontend Developer</p>
+            </div>
           </li>
           <li>
             <img
@@ -106,8 +112,10 @@
               height="260"
               alt="Marketing Specialist Photo"
             />
+            <div class="team-card-text">
             <h3>Camila Garcia</h3>
             <p>Marketing</p>
+            </div>
           </li>
           <li>
             <img
@@ -116,8 +124,10 @@
               height="260"
               alt="UI Designer Photo"
             />
+            <div class="team-card-text">
             <h3>Daniel Wilson</h3>
             <p>UI Designer</p>
+            </div>
           </li>
         </ul>
       </section>
