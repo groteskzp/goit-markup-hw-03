@@ -127,12 +127,12 @@ header{
 .header-address-list {
     display: flex;
     gap: 40px;
-    color: #434455;
-    font-style: normal;
 }
 .header-address-list a{
     padding: 24px 0;
     display: inline-block;
+    color: #434455;
+    font-style: normal;
 }
 .hero {
     background-color: #2e2f42;
@@ -170,7 +170,6 @@ header{
     display: flex;
     gap: 24px;
     align-items: center;
-    justify-content: center;
     padding: 0;
 }
 .values-subtitle {
@@ -180,7 +179,7 @@ header{
 .values-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     text-align: left;
     width: calc((100% - 72px) / 4);
 }
@@ -206,7 +205,6 @@ header{
 .team-list {
     display: flex;
     gap: 24px;
-    justify-content: center;
     align-items: stretch;
     padding-left: 0;
 }
@@ -226,6 +224,7 @@ header{
 .team-card-text {
     padding: 32px 16px;
     box-sizing: border-box;
+    text-align: center
 }
 .team-subtitle {
     margin-bottom: 8px;
@@ -239,14 +238,12 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 48px 24px;
-    justify-content: center;
     align-items:center;
     padding-left: 0;
 }
 .portfolio-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: stretch;
     width: calc((100% - 48px) / 3); 
 }
